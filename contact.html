@@ -3,8 +3,18 @@
 
 <head>
     <title> Contact Form </title>
+    <!-- This links styles to this page-->
+    <link href="css/styles.css" rel="stylesheet">
+    <script src='js/contact.js'></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
+<script type="text/javascript">
+(function() {
+emailjs.init("user_nBRp6yX23zoBcs377uhb9");
+})();
+</script>
 </head>
 
+<!-- This links styles to this page-->
 <link href="css/styles.css" rel="stylesheet">
 
 <body>
@@ -13,28 +23,35 @@
   <h1>Contact Form</h1>
 </div>
 
-<div class="h2">
+<!-- This is the contact form with labels and inputs for the user-->
+<form id="contact-form">
+  <input type="hidden" name="contact_number">
     <ul>
     <label for="lastname">Last Name:  </label>
-    <input type="text" id="ln" name=lastname" placeholder="Your Last Name...">
+    <input type="text" name="user_lname" placeholder="Your Last Name...">
     </ul>
     <ul>
     <label for="firstname">First Name:  </label>
-    <input type="text" id="fn" name=firstname" placeholder="Your first Name...">
+    <input type="text" name="user_fname" placeholder="Your first Name...">
     </ul>
     <ul>
     <label for="email">Email:  </label>
-    <input type="text" id="em" name=email" placeholder="Your Email...">
+    <input type="text" name="user_email" placeholder="Your Email...">
     </ul>
     <ul>
     <label for="lastname">Phone Number:  </label>
-    <input type="text" id="pn" name=phonenumber" placeholder="Your Phone Number...">
+    <input type="text" name="user_phone" placeholder="Your Phone Number...">
     </ul>
     <ul>
         <label for="message">Message:  </label>
-        <input type="text" id="msg" name=message" placeholder="Enter Your Message...">
-        </ul>
-</div>
+        <input type="text" name="message" placeholder="Enter Your Message...">
+    </ul>
+    <input type="submit" value="Send Message">
+</form>
+
+
+<!-- Button to go back to home page-->
+<a href="index.html">Back</a>
 
 </body>
 
