@@ -3,16 +3,20 @@ body {background-color: powderblue;}
 .h1 {
   padding: 50px;
   text-align: center;
-  background: #1a73bc;
+  background: hsl(207, 76%, 42%);
   color: white;
   font-size: 20px;
 }
-p {text-align: center;}
+
+p {
+  text-align: center;
+  font-size: larger;
+}
 
 .h2 {
   padding: 30px;
   text-align: center;
-  background: orange;
+  background: #1a73bc;
   color: white;
   font-size: 15px;
 }
@@ -33,7 +37,7 @@ li {text-align: center;}
   a{
     padding: 1px 120px;
     color: orange;
-    background-color:blue;
+    background-color: pink;
     cursor: pointer;
     font-size: 16px;
     border: orange;
@@ -48,3 +52,45 @@ li {text-align: center;}
     color: white;
     font-size: 20px;
   }
+
+  /* Navigation Panel */
+  /* button for dropdown class links*/
+  .dbtn {
+    background-color: crimson;
+    color: black;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+  }
+  
+  /* added cursor to dropdown*/
+  .dropdown {
+    position: relative;
+    cursor: pointer;
+  }
+  
+  /* css for dropdown content*/
+  .dcontent {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+  
+  /* custom css for "a" */
+  .dcontent a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+  
+  /* different hovers for the contents of navigation panel */
+  .dcontent a:hover {background-color: white;}
+  
+  .dropdown:hover .dcontent {display: block;}
+  
+  .dropdown:hover .dbtn {background-color: pink;}
