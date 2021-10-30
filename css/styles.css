@@ -3,9 +3,10 @@ body {background-color: powderblue;}
 .h1 {
   padding: 50px;
   text-align: center;
-  background: hsl(207, 76%, 42%);
-  color: white;
-  font-size: 20px;
+  background: #1a73bc;
+  font-size: 25px;
+  box-shadow: inset;  
+
 }
 
 p {
@@ -35,12 +36,11 @@ li {text-align: center;}
   }
 
   a{
-    padding: 1px 120px;
-    color: orange;
+    padding: 0.5px 20px;
+    color:black;
     background-color: pink;
     cursor: pointer;
     font-size: 16px;
-    border: orange;
    }
 
   a:hover {background-color: blueviolet;}
@@ -56,18 +56,20 @@ li {text-align: center;}
   /* Navigation Panel */
   /* button for dropdown class links*/
   .dbtn {
-    background-color: crimson;
+    background-color: pink;
     color: black;
-    padding: 16px;
+    padding: 0.5px 20px;
     font-size: 16px;
     border: none;
     cursor: pointer;
+    float: right;
   }
   
   /* added cursor to dropdown*/
   .dropdown {
     position: relative;
     cursor: pointer;
+    float: right;
   }
   
   /* css for dropdown content*/
@@ -91,6 +93,16 @@ li {text-align: center;}
   /* different hovers for the contents of navigation panel */
   .dcontent a:hover {background-color: white;}
   
-  .dropdown:hover .dcontent {display: block;}
+  .dropdown:hover .dcontent {display: block;} 
   
   .dropdown:hover .dbtn {background-color: pink;}
+
+  .h3 {
+    padding: 50px;
+    text-align: center;
+    background: hsl(207, 76%, 42%);
+    color: red;
+    font-size: 20px;  
+  }
+
+  
